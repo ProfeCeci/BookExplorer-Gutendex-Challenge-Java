@@ -33,3 +33,27 @@ Se planea implementar las siguientes mejoras:
 1.  Clona este repositorio.
 2.  Abre el proyecto en tu IDE de preferencia (e.g., IntelliJ IDEA).
 3.  Ejecuta la clase ` BookexplorerApplication.java` para iniciar la aplicación.
+
+---
+
+## Actualización - Desafío LiterAlura
+
+Esta nueva versión de **Book Explorer** ha sido actualizada para cumplir con los requisitos del desafío **LiterAlura**. La aplicación ahora se conecta a una base de datos PostgreSQL y ofrece un menú interactivo con funcionalidades más avanzadas.
+
+### Cambios y Nuevas Funcionalidades
+
+*   **Persistencia de Datos:** Se ha integrado una base de datos **PostgreSQL** utilizando **Spring Data JPA** para almacenar y gestionar la información de libros y autores.
+*   **Menú Interactivo:** La aplicación ahora cuenta con un menú en la consola que permite al usuario elegir entre las siguientes opciones:
+    1.  **Buscar libro por título:** Busca un libro en la API de Gutendex y lo guarda en la base de datos si no existe.
+    2.  **Listar libros registrados:** Muestra todos los libros almacenados en la base de datos.
+    3.  **Listar autores registrados:** Muestra todos los autores guardados.
+    4.  **Listar autores vivos en un determinado año:** Permite al usuario ingresar un año y muestra los autores que estaban vivos en ese período.
+    5.  **Listar libros por idioma:** Muestra los libros registrados en un idioma específico (ES, EN, FR, PT).
+*   **Manejo de Duplicados:** Se ha implementado una lógica para evitar que el mismo libro sea registrado más de una vez.
+*   **Corrección de Errores:** Se solucionó un error en la búsqueda de libros por idioma que era sensible a mayúsculas y minúsculas.
+
+### Tecnologías Actualizadas
+
+*   **Java 17**
+*   **Spring Data JPA**
+*   **PostgreSQL Driver**
